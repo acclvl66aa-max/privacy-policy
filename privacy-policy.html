@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slerbo Enhancer – Privacy Policy</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; color: #1b1f24; }
+  h1 { font-size: 1.8rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { color: #5b6470; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { background: #eef1f4; padding: 1px 5px; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) { body { background: #0f1317; color: #e6e9ed; } .meta { color: #98a2ae; } code { background: #1c232b; } }
+</style>
+</head>
+<body>
+<h1>Slerbo Enhancer – Privacy Policy</h1>
+<p class="meta">Effective date: October 18, 2026</p>
+
+<p>Slerbo Enhancer is a Chrome extension that helps you upload videos to TikTok with better quality. This policy explains what data the extension and its server handle, and why.</p>
+
+<h2>1. How it works</h2>
+<p>The extension runs on <code>tiktok.com</code> and works together with a Slerbo server (hosted on Render at <code>slerbo-auth.onrender.com</code>). Part of the processing is done by that server, not inside the extension. You must sign in with Telegram to use the processing features.</p>
+
+<h2>2. Data we collect and why</h2>
+<ul>
+  <li><strong>Telegram account details</strong> – when you sign in through our Telegram bot we receive your numeric Telegram ID, first name, last name (if set), username (if set) and your current profile photo. We use them to show your profile in the extension, to identify your account and to apply your plan and weekly limit. The photo is stored on our server and refreshed about once a day.</li>
+  <li><strong>Plan and usage</strong> – your plan (Free or Premium), Premium expiry date and how many times you used the service this week.</li>
+  <li><strong>Sign-in session</strong> – a random session token. Our server stores only a hash of it, and sessions expire after 30 days.</li>
+  <li><strong>Video technical metadata</strong> – when you process a video, the extension sends only the small technical metadata of the file (such as timing, frame-rate and header information) to our server. <strong>The video itself (picture and sound) never leaves your device.</strong> One of the methods forwards this metadata to the third-party service CompressBase (<code>compressbase.com</code>), which returns the patched metadata. The metadata is not stored by us after the request finishes.</li>
+  <li><strong>Post request data</strong> – when you publish on TikTok while signed in, the extension sends the publish request (for example your caption, mentions and post settings) to our server, which edits it (for example adding Slerbo's credit line and mention to the caption and adjusting processing flags) and sends it back. This content is not stored or logged by us.</li>
+  <li><strong>Technical logs</strong> – our hosting provider may keep standard server logs (such as IP address and request time) for security and operation.</li>
+</ul>
+
+<h2>3. Data stored on your device</h2>
+<ul>
+  <li>Your settings (Chrome sync storage, so they follow your Chrome profile) and your Slerbo sign-in session and profile (local extension storage).</li>
+  <li>A temporary copy of the processed video in the extension's own browser database so it can be handed to the TikTok upload page. It is removed when the job finishes.</li>
+  <li>The extension can delete the TikTok cookie named <code>ttwid</code> only when you press the "Clear TTWID" button. It does not read any cookies.</li>
+</ul>
+
+<h2>4. What we do not do</h2>
+<ul>
+  <li>We do not collect your browsing history, passwords, TikTok login details or the content of other websites. The extension runs only on TikTok pages.</li>
+  <li>We do not sell or rent your data, and we do not use it for advertising or for credit or lending decisions.</li>
+  <li>We do not use analytics or advertising trackers inside the extension.</li>
+</ul>
+
+<h2>5. Third parties</h2>
+<ul>
+  <li><strong>Telegram</strong> – used for sign-in. Telegram's own privacy policy applies to your Telegram account.</li>
+  <li><strong>CompressBase</strong> – receives video metadata for one of the processing methods, as described above.</li>
+  <li><strong>Render</strong> – hosts our server.</li>
+  <li><strong>TikTok</strong> – the extension works on TikTok's website; TikTok's own policies apply to your use of TikTok.</li>
+</ul>
+
+<h2>6. Retention and deletion</h2>
+<p>We keep your account record (Telegram details, plan and usage) while you use the service. You can ask us to delete your data at any time by contacting us on Telegram (below). Uninstalling the extension removes everything stored on your device.</p>
+
+<h2>7. Children</h2>
+<p>The service is not directed to children under 13, and we do not knowingly collect their data.</p>
+
+<h2>8. Changes</h2>
+<p>If we change this policy we will update the date at the top of this page.</p>
+
+<h2>9. Contact</h2>
+<p>Telegram: <a href="https://t.me/slerbo_freefire">@slerbo_freefire</a></p>
+</body>
+</html>
