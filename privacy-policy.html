@@ -19,7 +19,7 @@
 <h1>Slerbo Enhancer – Privacy Policy</h1>
 <p class="meta">Effective date: October 18, 2026</p>
 
-<p>Slerbo Enhancer is a Chrome extension that helps you upload videos to TikTok with better quality. This policy explains what data the extension and its server handle, and why.</p>
+<p>Slerbo Enhancer is a Chrome extension that helps you upload videos to TikTok Studio and manage the upload process. This policy explains what data the extension and its server handle, and why.</p>
 
 <h2>1. How it works</h2>
 <p>The extension runs on <code>tiktok.com</code> and works together with a Slerbo server (hosted on Render at <code>slerbo-auth.onrender.com</code>). Part of the processing is done by that server, not inside the extension. You must sign in with Telegram to use the processing features.</p>
@@ -30,7 +30,7 @@
   <li><strong>Plan and usage</strong> – your plan (Free or Premium), Premium expiry date and how many times you used the service this week.</li>
   <li><strong>Sign-in session</strong> – a random session token. Our server stores only a hash of it, and sessions expire after 30 days.</li>
   <li><strong>Video technical metadata</strong> – when you process a video, the extension sends only the small technical metadata of the file (such as timing, frame-rate and header information) to our server. <strong>The video itself (picture and sound) never leaves your device.</strong> One of the methods forwards this metadata to the third-party service CompressBase (<code>compressbase.com</code>), which returns the patched metadata. The metadata is not stored by us after the request finishes.</li>
-  <li><strong>Post request data</strong> – when you publish on TikTok while signed in, the extension sends the publish request (for example your caption, mentions and post settings) to our server, which edits it (for example adding Slerbo's credit line and mention to the caption and adjusting processing flags) and sends it back. This content is not stored or logged by us.</li>
+  <li><strong>Post request data</strong> – when you publish on TikTok while signed in, the extension sends the publish request (for example your caption, mentions and post settings) to our server, which edits it (for example adding a caption signature and the @slerbo.edits mention to the caption and adjusting processing flags) and sends it back. This content is not stored or logged by us.</li>
   <li><strong>Technical logs</strong> – our hosting provider may keep standard server logs (such as IP address and request time) for security and operation.</li>
 </ul>
 
@@ -38,7 +38,7 @@
 <ul>
   <li>Your settings (Chrome sync storage, so they follow your Chrome profile) and your Slerbo sign-in session and profile (local extension storage).</li>
   <li>A temporary copy of the processed video in the extension's own browser database so it can be handed to the TikTok upload page. It is removed when the job finishes.</li>
-  <li>The extension can delete the TikTok cookie named <code>ttwid</code> only when you press the "Clear TTWID" button. It does not read any cookies.</li>
+  <li>The extension can delete the TikTok cookie named <code>ttwid</code> only when you press the "Fix upload" button. It does not read any cookies.</li>
 </ul>
 
 <h2>4. What we do not do</h2>
