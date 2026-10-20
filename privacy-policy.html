@@ -17,7 +17,7 @@
 </head>
 <body>
 <h1>Slerbo Enhancer – Privacy Policy</h1>
-<p class="meta">Effective date: October 19, 2026</p>
+<p class="meta">Effective date: October 20, 2026</p>
 
 <p>Slerbo Enhancer is a Chrome extension that helps you upload videos to TikTok Studio and manage the upload process. This policy explains what data the extension and its server handle, and why.</p>
 
@@ -31,6 +31,7 @@
   <li><strong>Sign-in session</strong> – a random session token. Our server stores only a hash of it, and sessions expire after 30 days.</li>
   <li><strong>Video technical metadata</strong> – when you process a video, the extension sends only the small technical metadata of the file (such as timing, frame-rate and header information) to our server. <strong>The video itself (picture and sound) never leaves your device.</strong> One of the methods forwards this metadata to the third-party service CompressBase (<code>compressbase.com</code>), which returns the patched metadata. The metadata is not stored by us after the request finishes.</li>
   <li><strong>Post request data</strong> – when you publish on TikTok while signed in, the extension sends the publish request (for example your caption, mentions and post settings) to our server, which edits it (for example adding a caption signature and the @slerbo.edits mention to the caption and adjusting processing flags) and sends it back. This content is not stored or logged by us.</li>
+  <li><strong>Published video ID</strong> – after a post is published through the extension, the extension sends the public ID of that video to our server. The server later checks the public TikTok page of that video to see whether the caption signature (@slerbo.edits) is still there, and keeps only the result (present or removed) together with the ID for up to 14 days. The video itself and its content are not stored.</li>
   <li><strong>Technical logs</strong> – our hosting provider may keep standard server logs (such as IP address and request time) for security and operation.</li>
 </ul>
 
