@@ -3,70 +3,189 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Slerbo Enhancer – Privacy Policy</title>
+<title>Privacy Policy — Slerbo Enhancer</title>
+<meta name="description" content="Privacy Policy for the Slerbo Enhancer browser extension.">
 <style>
-  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; color: #1b1f24; }
-  h1 { font-size: 1.8rem; margin-bottom: .2rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .meta { color: #5b6470; margin-top: 0; }
-  ul { padding-left: 1.2rem; }
-  li { margin: .3rem 0; }
-  code { background: #eef1f4; padding: 1px 5px; border-radius: 4px; }
-  @media (prefers-color-scheme: dark) { body { background: #0f1317; color: #e6e9ed; } .meta { color: #98a2ae; } code { background: #1c232b; } }
+  :root{
+    --bg:#04060c; --panel:rgba(255,255,255,.03); --line:rgba(125,211,252,.18);
+    --text:#eaf2fb; --muted:#9fb0c4; --ice:#7dd3fc; --ice2:#bae6fd;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:
+      radial-gradient(90% 60% at 50% -10%, rgba(37,99,235,.22), transparent 60%),
+      radial-gradient(70% 50% at 50% 110%, rgba(56,189,248,.14), transparent 60%),
+      var(--bg);
+    color:var(--text); font:16px/1.7 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    min-height:100vh; padding:40px 20px 80px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+  .logo{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;flex:none;
+    background:radial-gradient(circle at 50% 35%,#0b1628,#02050c 72%);
+    border:2px solid rgba(224,242,254,.7); box-shadow:0 0 26px rgba(56,189,248,.4)}
+  .logo b{font:900 26px "Inter";background:linear-gradient(170deg,#fff,#7dd3fc,#1e3a5f);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font-size:30px;font-weight:800;letter-spacing:-.4px}
+  .sub{color:var(--muted);font-size:14px;margin-top:2px}
+  .updated{display:inline-block;margin:18px 0 28px;padding:5px 12px;border-radius:999px;
+    font:600 12.5px "Inter";letter-spacing:.3px;color:var(--ice2);
+    background:rgba(125,211,252,.08);border:1px solid var(--line)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;
+    padding:22px 24px;margin-bottom:16px}
+  h2{font-size:17px;font-weight:800;color:#fff;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+  h2 .dot{width:8px;height:8px;border-radius:50%;background:var(--ice);box-shadow:0 0 10px var(--ice);flex:none}
+  p{color:#cdd9e6;margin:8px 0}
+  ul{margin:10px 0 4px;padding-left:4px;list-style:none}
+  li{position:relative;padding:5px 0 5px 24px;color:#cdd9e6}
+  li::before{content:"";position:absolute;left:4px;top:13px;width:7px;height:7px;border-radius:2px;
+    background:linear-gradient(135deg,#67e8f9,#3b82f6)}
+  b,strong{color:#fff;font-weight:700}
+  .ok{color:#86efac;font-weight:700}
+  .no{color:#fca5a5;font-weight:700}
+  a{color:var(--ice);text-decoration:none;border-bottom:1px solid rgba(125,211,252,.4)}
+  a:hover{color:#fff}
+  footer{color:var(--muted);font-size:13px;text-align:center;margin-top:30px;line-height:1.8}
+  @media (max-width:520px){ body{padding:28px 14px 60px} h1{font-size:24px} .card{padding:18px} }
 </style>
 </head>
 <body>
-<h1>Slerbo Enhancer – Privacy Policy</h1>
-<p class="meta">Effective date: October 20, 2026</p>
+<div class="wrap">
+  <header>
+    <div class="logo" aria-hidden="true"><b>S</b></div>
+    <div>
+      <h1>Privacy Policy</h1>
+      <div class="sub">Slerbo Enhancer browser extension</div>
+    </div>
+  </header>
+  <span class="updated">Last updated: 12 November 2026</span>
 
-<p>Slerbo Enhancer is a Chrome extension that helps you upload videos to TikTok Studio and manage the upload process. This policy explains what data the extension and its server handle, and why.</p>
+  <div class="card">
+    <p>Slerbo Enhancer is a browser extension that helps creators upload smoother, sharper
+    videos on TikTok Studio. This policy explains exactly what information the extension uses,
+    why, and what it never does. We keep it to the minimum needed for the tool to work.</p>
+  </div>
 
-<h2>1. How it works</h2>
-<p>The extension runs on <code>tiktok.com</code> and works together with a Slerbo server (hosted on Render at <code>slerbo-auth.onrender.com</code>). Part of the processing is done by that server, not inside the extension. You must sign in with Telegram to use the processing features.</p>
+  <div class="card">
+    <h2><span class="dot"></span>What we collect</h2>
+    <p>When you sign in with Telegram, our server stores only your public Telegram profile so we
+    can recognize your account and show your plan:</p>
+    <ul>
+      <li>Your Telegram numeric ID, first and last name, username, and profile photo URL.</li>
+      <li>Your plan, your daily upload count and your daily TikTok Checker count (so limits and Premium work).</li>
+      <li>The IDs of the TikTok videos you publish with the tool, so our server can check later that the
+      public caption still carries the credit line (see "Caption credit").</li>
+      <li>Basic technical details of requests sent to our server (time, browser type / user-agent, and the
+      extension's own fingerprint) — used only to keep the service secure (see "Security and misuse").</li>
+    </ul>
+    <p>We do <span class="no">not</span> collect your email, phone number, password,
+    contacts, browsing history, or any TikTok account credentials.</p>
+  </div>
 
-<h2>2. Data we collect and why</h2>
-<ul>
-  <li><strong>Telegram account details</strong> – when you sign in through our Telegram bot we receive your numeric Telegram ID, first name, last name (if set), username (if set) and your current profile photo. We use them to show your profile in the extension, to identify your account and to apply your plan and weekly limit. The photo is stored on our server and refreshed about once a day.</li>
-  <li><strong>Plan and usage</strong> – your plan (Free or Premium), Premium expiry date and how many times you used the service this week.</li>
-  <li><strong>Sign-in session</strong> – a random session token. Our server stores only a hash of it, and sessions expire after 30 days.</li>
-  <li><strong>Video technical metadata</strong> – when you process a video, the extension sends only the small technical metadata of the file (such as timing, frame-rate and header information) to our server. <strong>The video itself (picture and sound) never leaves your device.</strong> One of the methods forwards this metadata to the third-party service CompressBase (<code>compressbase.com</code>), which returns the patched metadata. The metadata is not stored by us after the request finishes.</li>
-  <li><strong>Post request data</strong> – when you publish on TikTok while signed in, the extension sends the publish request (for example your caption, mentions and post settings) to our server, which edits it (for example adding a caption signature and the @slerbo.edits mention to the caption and adjusting processing flags) and sends it back. This content is not stored or logged by us.</li>
-  <li><strong>Published video ID</strong> – after a post is published through the extension, the extension sends the public ID of that video to our server. The server later checks the public TikTok page of that video to see whether the caption signature (@slerbo.edits) is still there, and keeps only the result (present or removed) together with the ID for up to 14 days. The video itself and its content are not stored.</li>
-  <li><strong>Technical logs</strong> – our hosting provider may keep standard server logs (such as IP address and request time) for security and operation.</li>
-</ul>
+  <div class="card">
+    <h2><span class="dot"></span>Your videos stay on your device</h2>
+    <ul>
+      <li>Your video is processed on your own device and is <b>never uploaded to us</b>.</li>
+      <li>For the FPS Boost and Slerbo Pro modes, only the video's small technical header
+      (timing metadata — not the picture or the sound) is sent to our server to prepare the file.
+      It is used only for that request and is not stored.</li>
+      <li>Direct Upload sends nothing to us at all.</li>
+    </ul>
+  </div>
 
-<h2>3. Data stored on your device</h2>
-<ul>
-  <li>Your settings (Chrome sync storage, so they follow your Chrome profile) and your Slerbo sign-in session and profile (local extension storage).</li>
-  <li>A temporary copy of the processed video in the extension's own browser database so it can be handed to the TikTok upload page. It is removed when the job finishes.</li>
-  <li>The extension can delete the TikTok cookie named <code>ttwid</code> only when you press the "Fix upload" button. It does not read any cookies.</li>
-</ul>
+  <div class="card">
+    <h2><span class="dot"></span>TikTok Checker</h2>
+    <ul>
+      <li>When you paste a TikTok link and press <b>Check video</b>, that link is sent to our server.
+      The server reads the video's <b>public</b> information from TikTok (creator, caption, sound,
+      engagement numbers, available qualities and visibility) and sends the result back to you.</li>
+      <li>The link and the result are <b>not stored</b> in your account. The server keeps the public
+      video information in memory for up to 3 minutes so a repeated check is faster; only your daily
+      check count is saved.</li>
+      <li>The Checker only reads information that TikTok shows publicly. It never signs in to TikTok
+      and never accesses private data.</li>
+      <li>Country flags in the results are loaded as images from <code>flagcdn.com</code>; like any
+      image, that site receives a normal request from your browser.</li>
+    </ul>
+  </div>
 
-<h2>4. What we do not do</h2>
-<ul>
-  <li>We do not collect your browsing history, passwords, TikTok login details or the content of other websites. The extension runs only on TikTok pages.</li>
-  <li>We do not sell or rent your data, and we do not use it for advertising or for credit or lending decisions.</li>
-  <li>We do not use analytics or advertising trackers inside the extension.</li>
-</ul>
+  <div class="card">
+    <h2><span class="dot"></span>Permissions, and why</h2>
+    <ul>
+      <li><b>tiktok.com access:</b> the extension runs only on tiktok.com — on TikTok Studio's upload
+      page it adds its controls, prepares the selected video, shows upload progress and adds a short
+      credit line to the caption; on other TikTok pages it only shows a small status badge.</li>
+      <li><b>Cookies:</b> used only for the "Fix upload" button, which removes TikTok's own
+      <code>ttwid</code> cookie to unstick a failed upload. We never read, collect, or send your cookies.</li>
+      <li><b>Storage:</b> saves your settings and sign-in on your own device.</li>
+      <li><b>Clipboard (optional, asked only when you tap "Paste"):</b> reads the clipboard once to paste
+      a TikTok link into the Checker. Nothing from the clipboard is sent anywhere except that link,
+      and only when you press Check video.</li>
+      <li><b>Our server (slerbo-auth.onrender.com):</b> used for Telegram sign-in, checking your
+      plan and daily limits, preparing the video for FPS Boost / Slerbo Pro, and the TikTok Checker.</li>
+    </ul>
+  </div>
 
-<h2>5. Third parties</h2>
-<ul>
-  <li><strong>Telegram</strong> – used for sign-in. Telegram's own privacy policy applies to your Telegram account.</li>
-  <li><strong>CompressBase</strong> – receives video metadata for one of the processing methods, as described above.</li>
-  <li><strong>Render</strong> – hosts our server.</li>
-  <li><strong>TikTok</strong> – the extension works on TikTok's website; TikTok's own policies apply to your use of TikTok.</li>
-</ul>
+  <div class="card">
+    <h2><span class="dot"></span>Caption credit</h2>
+    <p>Videos prepared with Slerbo Enhancer include a short credit line in the caption
+    (<code>ϟ Upload Method &gt; @slerbo.edits</code> and <code>#slerbouploadmethod</code>). This is part
+    of how the tool works and is added when you post. After you publish, our server checks the
+    video's <b>public</b> caption a few times over the following days to make sure the credit line is
+    still there; removing it can lead to a warning or to losing access to the tool.</p>
+  </div>
 
-<h2>6. Retention and deletion</h2>
-<p>We keep your account record (Telegram details, plan and usage) while you use the service. You can ask us to delete your data at any time by contacting us on Telegram (below). Uninstalling the extension removes everything stored on your device.</p>
+  <div class="card">
+    <h2><span class="dot"></span>Security and misuse</h2>
+    <p>To protect your account and the service, our server checks that requests really come from the
+    official Slerbo Enhancer extension (its extension ID, its package fingerprint and a signature on
+    Checker requests). Requests from modified copies of the extension, scripts or other apps are
+    refused, and the Telegram account that sent them can be blocked. The technical details of such a
+    request (time, browser type / user-agent, your Telegram ID and username) are shared only with the
+    owner of Slerbo Enhancer, to review the case.</p>
+  </div>
 
-<h2>7. Children</h2>
-<p>The service is not directed to children under 13, and we do not knowingly collect their data.</p>
+  <div class="card">
+    <h2><span class="dot"></span>What we never do</h2>
+    <ul>
+      <li>We <span class="no">never</span> sell or rent your data to anyone.</li>
+      <li>We <span class="no">never</span> use your data for advertising or tracking across sites.</li>
+      <li>We <span class="no">never</span> access your TikTok messages, followers, or account settings.</li>
+      <li>We <span class="no">never</span> read your browsing on other websites — the extension runs
+      only on tiktok.com.</li>
+      <li>We <span class="no">never</span> share your data with third parties, except where required by law.</li>
+    </ul>
+    <p>We <span class="ok">only</span> use the limited data above to run the tool you signed up for.
+    Our use of this data follows the
+    <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>,
+    including the Limited Use requirements.</p>
+  </div>
 
-<h2>8. Changes</h2>
-<p>If we change this policy we will update the date at the top of this page.</p>
+  <div class="card">
+    <h2><span class="dot"></span>Keeping and deleting your data</h2>
+    <p>Your Telegram profile and plan are kept while your account is active. You can ask us to
+    delete your account and data at any time by contacting us on Telegram. For the credit check,
+    only the IDs of your latest 30 published videos are kept. Removing the extension
+    also clears everything it saved on your device.</p>
+  </div>
 
-<h2>9. Contact</h2>
-<p>Telegram: <a href="https://t.me/slerbo_freefire">@slerbo_freefire</a></p>
+  <div class="card">
+    <h2><span class="dot"></span>Children</h2>
+    <p>Slerbo Enhancer is not directed to children under 13, and we do not knowingly collect their data.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="dot"></span>Changes &amp; contact</h2>
+    <p>If this policy changes, we will update the date at the top of this page. For any question
+    about your data, or to request deletion, contact us on Telegram:
+    <a href="https://t.me/slerbo_freefire" target="_blank" rel="noopener">@slerbo_freefire</a>.</p>
+  </div>
+
+  <footer>
+    Slerbo Enhancer is an independent tool and is not affiliated with or endorsed by TikTok.<br>
+    © 2026 Slerbo Enhancer — slerbo.edits
+  </footer>
+</div>
 </body>
 </html>
